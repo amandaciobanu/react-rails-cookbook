@@ -73,8 +73,8 @@ class NewRecipe extends React.Component {
                                     type="text"
                                     name="name"
                                     id="recipeName"
-                                    minlength="6"
-                                    maxlength="40"
+                                    minLength="6"
+                                    maxLength="50"
                                     className="form-control"
                                     required
                                     onChange={this.onChange}
@@ -86,8 +86,8 @@ class NewRecipe extends React.Component {
                                     type="text"
                                     name="ingredients"
                                     id="recipeIngredients"
-                                    minlength="6"
-                                    maxlength="500"
+                                    minLength="6"
+                                    maxLength="1000"
                                     className="form-control"
                                     required
                                     onChange={this.onChange}
@@ -101,8 +101,8 @@ class NewRecipe extends React.Component {
                                 className="form-control"
                                 id="instruction"
                                 name="instruction"
-                                minlength="6"
-                                maxlength="1000"
+                                minLength="6"
+                                maxLength="1200"
                                 rows="5"
                                 required
                                 onChange={this.onChange}

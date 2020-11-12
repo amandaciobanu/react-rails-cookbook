@@ -3018,3 +3018,926 @@ Processing by Api::V1::RecipesController#show as */*
 Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 1503)
 
 
+Started GET "/" for ::1 at 2020-11-12 15:04:27 +0000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 8280)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:04:31 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 138ms (Views: 66.4ms | ActiveRecord: 16.8ms | Allocations: 8278)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:04:36 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 36ms (Views: 24.7ms | ActiveRecord: 1.6ms | Allocations: 2551)
+
+
+Started GET "/api/v1/show/9" for ::1 at 2020-11-12 15:04:39 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 23ms (Views: 2.5ms | ActiveRecord: 2.1ms | Allocations: 1503)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:04:42 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 18.8ms | ActiveRecord: 1.5ms | Allocations: 2539)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:04:51 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 21.8ms | ActiveRecord: 1.5ms | Allocations: 2556)
+
+
+Started GET "/api/v1/show/9" for ::1 at 2020-11-12 15:04:53 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 15ms (Views: 2.8ms | ActiveRecord: 1.5ms | Allocations: 1034)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:11:28 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (4.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 16.5ms | ActiveRecord: 4.0ms | Allocations: 2624)
+
+
+Started GET "/api/v1/show/6" for ::1 at 2020-11-12 15:11:33 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 13ms (Views: 1.9ms | ActiveRecord: 1.9ms | Allocations: 1074)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:11:42 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 1.8ms | Allocations: 2539)
+
+
+Started GET "/api/v1/show/9" for ::1 at 2020-11-12 15:11:54 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 1.3ms | Allocations: 1039)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:12:36 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 1.5ms | Allocations: 2539)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:12:48 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 1.1ms | Allocations: 2533)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:12:54 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 3.2ms | Allocations: 2557)
+
+
+Started GET "/api/v1/show/2" for ::1 at 2020-11-12 15:12:57 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (7.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 17ms (Views: 1.9ms | ActiveRecord: 7.0ms | Allocations: 1033)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:12:59 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 37ms (Views: 28.0ms | ActiveRecord: 1.3ms | Allocations: 2545)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (119.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_react_recipe_development"[0m
+  [1m[35m (80.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_react_recipe_test"[0m
+  [1m[35m (659.3ms)[0m  [1m[35mCREATE DATABASE "rails_react_recipe_development" ENCODING = 'unicode'[0m
+  [1m[35m (275.4ms)[0m  [1m[35mCREATE DATABASE "rails_react_recipe_test" ENCODING = 'unicode'[0m
+  [1m[35m (33.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4756338405265642755)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecipes (20201111192956)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (30.3ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "name" character varying NOT NULL, "ingredients" text NOT NULL, "instruction" text NOT NULL, "image" character varying DEFAULT 'https://raw.githubusercontent.com/do-community/react_rails_recipe/master/app/assets/images/Sammy_Meal.jpg', "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201111192956"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeImageDefault (20201112120141)
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "recipes" ALTER COLUMN "image" SET DEFAULT 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1585&q=80'[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201112120141"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeImgDefault (20201112151919)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "recipes" ALTER COLUMN "image" SET DEFAULT 'https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80'[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201112151919"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-12 15:21:39.793840"], ["updated_at", "2020-11-12 15:21:39.793840"]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4756338405265642755)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:25:35.207326"], ["updated_at", "2020-11-12 15:25:35.207326"]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:25:35.220414"], ["updated_at", "2020-11-12 15:25:35.220414"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:25:35.231055"], ["updated_at", "2020-11-12 15:25:35.231055"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:25:35.243115"], ["updated_at", "2020-11-12 15:25:35.243115"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:25:35.259608"], ["updated_at", "2020-11-12 15:25:35.259608"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:25:35.273334"], ["updated_at", "2020-11-12 15:25:35.273334"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:25:35.286094"], ["updated_at", "2020-11-12 15:25:35.286094"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:25:35.298167"], ["updated_at", "2020-11-12 15:25:35.298167"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/recipes" for ::1 at 2020-11-12 15:25:57 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"recipes"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 8272)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:25:58 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 75ms (Views: 54.5ms | ActiveRecord: 9.1ms | Allocations: 8130)
+
+
+Started GET "/api/v1/show/8" for ::1 at 2020-11-12 15:26:05 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 27ms (Views: 4.4ms | ActiveRecord: 1.5ms | Allocations: 1513)
+
+
+Started GET "/recipes" for ::1 at 2020-11-12 15:26:09 +0000
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"recipes"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:26:10 +0000
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 63.7ms | ActiveRecord: 0.0ms | Allocations: 7035)
+
+
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 15.8ms | ActiveRecord: 3.6ms | Allocations: 2473)
+
+
+Started GET "/api/v1/show/8" for ::1 at 2020-11-12 15:26:13 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 14ms (Views: 1.7ms | ActiveRecord: 1.7ms | Allocations: 1074)
+
+
+Started GET "/" for ::1 at 2020-11-12 15:26:17 +0000
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 6033)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:26:20 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.7ms | Allocations: 2391)
+
+
+Started GET "/api/v1/show/8" for ::1 at 2020-11-12 15:26:23 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 12ms (Views: 1.9ms | ActiveRecord: 1.1ms | Allocations: 1053)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:26:30 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 1.0ms | Allocations: 2379)
+
+
+Started GET "/api/v1/show/8" for ::1 at 2020-11-12 15:26:35 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (2.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 17ms (Views: 1.7ms | ActiveRecord: 2.1ms | Allocations: 1041)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1010.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_react_recipe_development"[0m
+  [1m[35m (69.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_react_recipe_test"[0m
+  [1m[35m (199.7ms)[0m  [1m[35mCREATE DATABASE "rails_react_recipe_development" ENCODING = 'unicode'[0m
+  [1m[35m (189.0ms)[0m  [1m[35mCREATE DATABASE "rails_react_recipe_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "rails_react_recipe_development" ENCODING = 'unicode'[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE DATABASE "rails_react_recipe_test" ENCODING = 'unicode'[0m
+  [1m[35m (37.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (25.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4756338405265642755)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecipes (20201111192956)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.7ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "name" character varying NOT NULL, "ingredients" text NOT NULL, "instruction" text NOT NULL, "image" character varying DEFAULT 'https://raw.githubusercontent.com/do-community/react_rails_recipe/master/app/assets/images/Sammy_Meal.jpg', "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201111192956"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeImageDefault (20201112120141)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "recipes" ALTER COLUMN "image" SET DEFAULT 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1585&q=80'[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201112120141"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeImgDefault (20201112151919)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "recipes" ALTER COLUMN "image" SET DEFAULT 'https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80'[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201112151919"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-12 15:27:42.135283"], ["updated_at", "2020-11-12 15:27:42.135283"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4756338405265642755)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/recipe/8" for ::1 at 2020-11-12 15:27:56 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"recipe/8"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 8268)
+
+
+Started GET "/api/v1/show/8" for ::1 at 2020-11-12 15:27:57 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 404 Not Found in 20ms (ActiveRecord: 6.2ms | Allocations: 2926)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=8):
+  
+app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+app/controllers/api/v1/recipes_controller.rb:17:in `show'
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:27:57 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.8ms | Allocations: 1155)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:28:06 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 1.8ms | Allocations: 1132)
+
+
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:29:25 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini (cut into ½\" pieces), 1 large or 2 small Japanese(cut into ½\" pieces),  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"* Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br>* Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. * Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br>* Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts.", "recipe"=>{"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini (cut into ½\" pieces), 1 large or 2 small Japanese(cut into ½\" pieces),  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"* Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br>* Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. * Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br>* Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 23ms (ActiveRecord: 0.0ms | Allocations: 7486)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name is too long (maximum is 30 characters), Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:29:26 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini (cut into ½\" pieces), 1 large or 2 small Japanese(cut into ½\" pieces),  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"* Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br>* Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. * Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br>* Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts.", "recipe"=>{"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini (cut into ½\" pieces), 1 large or 2 small Japanese(cut into ½\" pieces),  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"* Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br>* Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. * Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br>* Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 7ms (ActiveRecord: 0.0ms | Allocations: 1744)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name is too long (maximum is 30 characters), Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:29:30 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 18.2ms | ActiveRecord: 3.1ms | Allocations: 1114)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 1"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.487132"], ["updated_at", "2020-11-12 15:30:25.487132"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 2"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.500648"], ["updated_at", "2020-11-12 15:30:25.500648"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 3"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.510820"], ["updated_at", "2020-11-12 15:30:25.510820"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 4"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.518942"], ["updated_at", "2020-11-12 15:30:25.518942"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 5"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.530209"], ["updated_at", "2020-11-12 15:30:25.530209"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 6"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.540803"], ["updated_at", "2020-11-12 15:30:25.540803"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 7"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.552948"], ["updated_at", "2020-11-12 15:30:25.552948"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 8"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.564827"], ["updated_at", "2020-11-12 15:30:25.564827"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Recipe 9"], ["ingredients", "227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)"], ["instruction", "In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm."], ["created_at", "2020-11-12 15:30:25.577614"], ["updated_at", "2020-11-12 15:30:25.577614"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/recipes" for ::1 at 2020-11-12 15:30:47 +0000
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"recipes"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 6053)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:30:47 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 2584)
+
+
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:37:59 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars),1 cup drippy cashew butter,4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars),1 cup drippy cashew butter,4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 6ms (ActiveRecord: 0.0ms | Allocations: 1318)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:01 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars),1 cup drippy cashew butter,4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars),1 cup drippy cashew butter,4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.0ms | Allocations: 1312)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:02 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars),1 cup drippy cashew butter,4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars),1 cup drippy cashew butter,4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.0ms | Allocations: 1309)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:21 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 7ms (ActiveRecord: 0.0ms | Allocations: 1309)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:22 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.0ms | Allocations: 1311)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:23 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.0ms | Allocations: 1307)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:23 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 1311)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:23 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 2561)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:24 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.0ms | Allocations: 1309)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:38:25 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate (we like Theo baking bars), 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.0ms | Allocations: 1309)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:39:14 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 7ms (ActiveRecord: 0.0ms | Allocations: 1309)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:39:15 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 10ms (ActiveRecord: 0.0ms | Allocations: 1309)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:39:15 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.0ms | Allocations: 1559)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 500 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:41:58 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months.", "recipe"=>{"name"=>"Vegan fudge -  3 Ingredients", "ingredients"=>"2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),", "instruction"=>"Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."}}
+[31mUnpermitted parameter: :recipe[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:8:in `create'
+  [1m[36mRecipe Create (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Vegan fudge -  3 Ingredients"], ["ingredients", "2 cups finely chopped dairy-free dark or semi-sweet chocolate, 1 cup drippy cashew butter, 4-6 Tbsp honey (or sub maple syrup),"], ["instruction", "Melt chocolate either in the microwave in 30-second increments, or over a double boiler (medium saucepan with 1 inch of water, simmering, and a glass or metal bowl over top that rests high enough that it doesn't touch the water) on the stovetop. Once melted, remove from heat.<br> <br>To the melted chocolate add nut butter and whisk to combine. Then add honey (starting with the lesser amount and working your way up to taste) and salt (optional) and stir or whisk to combine.<br> <br>Transfer to a parchment-lined loaf pan (or 8×8” baking dish) and (optionally) top with a few more dollops of nut butter and swirl with a knife or toothpick (see photo).<br> <br>Freeze until firm (~1-2 hours). Slice and enjoy (as recipe is written, makes ~20 pieces). Store leftovers covered in the refrigerator for 1 week or in the freezer for up to 2 months."], ["created_at", "2020-11-12 15:41:58.174102"], ["updated_at", "2020-11-12 15:41:58.174102"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:8:in `create'
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Completed 200 OK in 24ms (Views: 0.7ms | ActiveRecord: 12.4ms | Allocations: 7361)
+
+
+Started GET "/api/v1/show/10" for ::1 at 2020-11-12 15:41:58 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.1ms | Allocations: 1249)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:42:13 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 12.8ms | ActiveRecord: 3.3ms | Allocations: 2724)
+
+
+Started GET "/api/v1/show/1" for ::1 at 2020-11-12 15:43:04 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (2.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 2.5ms | Allocations: 1039)
+
+
+Started DELETE "/api/v1/destroy/1" for ::1 at 2020-11-12 15:43:06 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"1", "recipe"=>{}}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 6.5ms | Allocations: 2890)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:06 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.6ms | Allocations: 2561)
+
+
+Started GET "/api/v1/show/4" for ::1 at 2020-11-12 15:43:09 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 15ms (Views: 1.9ms | ActiveRecord: 1.1ms | Allocations: 1034)
+
+
+Started DELETE "/api/v1/destroy/4" for ::1 at 2020-11-12 15:43:10 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"4", "recipe"=>{}}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (1.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 34ms (Views: 0.7ms | ActiveRecord: 11.7ms | Allocations: 2862)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:10 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 17.4ms | ActiveRecord: 3.3ms | Allocations: 2391)
+
+
+Started GET "/api/v1/show/2" for ::1 at 2020-11-12 15:43:15 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 12ms (Views: 1.5ms | ActiveRecord: 1.2ms | Allocations: 1050)
+
+
+Started DELETE "/api/v1/destroy/2" for ::1 at 2020-11-12 15:43:16 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"2", "recipe"=>{}}
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (2.0ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 87ms (Views: 0.7ms | ActiveRecord: 13.5ms | Allocations: 2885)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:16 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 1.6ms | Allocations: 2240)
+
+
+Started GET "/api/v1/show/3" for ::1 at 2020-11-12 15:43:19 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (2.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 13ms (Views: 1.5ms | ActiveRecord: 2.5ms | Allocations: 1047)
+
+
+Started DELETE "/api/v1/destroy/3" for ::1 at 2020-11-12 15:43:20 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"3", "recipe"=>{}}
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (1.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 40ms (Views: 0.8ms | ActiveRecord: 9.2ms | Allocations: 2862)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:20 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 1.2ms | Allocations: 2081)
+
+
+Started GET "/api/v1/show/7" for ::1 at 2020-11-12 15:43:25 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (2.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 2.2ms | Allocations: 1034)
+
+
+Started DELETE "/api/v1/destroy/7" for ::1 at 2020-11-12 15:43:26 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"7", "recipe"=>{}}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (1.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 32ms (Views: 0.6ms | ActiveRecord: 8.1ms | Allocations: 2870)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:26 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 1.4ms | Allocations: 1921)
+
+
+Started GET "/api/v1/show/6" for ::1 at 2020-11-12 15:43:30 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 10ms (Views: 1.6ms | ActiveRecord: 1.1ms | Allocations: 1046)
+
+
+Started DELETE "/api/v1/destroy/6" for ::1 at 2020-11-12 15:43:31 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"6", "recipe"=>{}}
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (1.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 31ms (Views: 0.6ms | ActiveRecord: 7.7ms | Allocations: 2860)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:31 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 1.5ms | Allocations: 1763)
+
+
+Started GET "/api/v1/show/5" for ::1 at 2020-11-12 15:43:33 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 13ms (Views: 1.7ms | ActiveRecord: 0.8ms | Allocations: 1042)
+
+
+Started DELETE "/api/v1/destroy/5" for ::1 at 2020-11-12 15:43:35 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"5", "recipe"=>{}}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (2.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 33ms (Views: 0.6ms | ActiveRecord: 8.4ms | Allocations: 2872)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:35 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 1.2ms | Allocations: 1602)
+
+
+Started GET "/api/v1/show/9" for ::1 at 2020-11-12 15:43:37 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (2.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 14ms (Views: 1.7ms | ActiveRecord: 2.5ms | Allocations: 1040)
+
+
+Started DELETE "/api/v1/destroy/9" for ::1 at 2020-11-12 15:43:39 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"9", "recipe"=>{}}
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (1.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (29.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 61ms (Views: 1.2ms | ActiveRecord: 32.7ms | Allocations: 2864)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:39 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 10.3ms | ActiveRecord: 3.5ms | Allocations: 1444)
+
+
+Started GET "/api/v1/show/8" for ::1 at 2020-11-12 15:43:41 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (6.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 16ms (Views: 1.7ms | ActiveRecord: 6.7ms | Allocations: 1038)
+
+
+Started DELETE "/api/v1/destroy/8" for ::1 at 2020-11-12 15:43:44 +0000
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"8", "recipe"=>{}}
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[36mRecipe Destroy (1.0ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+  [1m[35m (28.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:25:in `destroy'
+Completed 200 OK in 56ms (Views: 1.6ms | ActiveRecord: 31.8ms | Allocations: 2870)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:43:44 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (4.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 4.1ms | Allocations: 1290)
+
+
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:44:17 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini (cut into ½\" pieces), 1 large or 2 small Japanese(cut into ½\" pieces),  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Step 1<br> <br>Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br><br> <br>Step 2<br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Step 3<br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Step 4<br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts.", "recipe"=>{"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini (cut into ½\" pieces), 1 large or 2 small Japanese(cut into ½\" pieces),  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Step 1<br> <br>Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br><br> <br>Step 2<br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Step 3<br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Step 4<br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 7ms (ActiveRecord: 0.0ms | Allocations: 1354)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 1000 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:44:47 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini (cut into ½\" pieces), 1 large or 2 small Japanese(cut into ½\" pieces),  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts.", "recipe"=>{"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini (cut into ½\" pieces), 1 large or 2 small Japanese(cut into ½\" pieces),  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 11ms (ActiveRecord: 0.0ms | Allocations: 1305)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 1000 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:45:32 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini, 1 large or 2 small Japanese,  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts.", "recipe"=>{"name"=>"Tofu and Summer Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini, 1 large or 2 small Japanese,  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 6ms (ActiveRecord: 0.0ms | Allocations: 1305)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 1000 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:45:42 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Tofu and Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini, 1 large or 2 small Japanese,  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts.", "recipe"=>{"name"=>"Tofu and Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini, 1 large or 2 small Japanese,  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. Season with kosher salt.<br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts."}}
+[31mUnpermitted parameter: :recipe[0m
+Completed 422 Unprocessable Entity in 6ms (ActiveRecord: 0.0ms | Allocations: 1305)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Instruction 1000 characters is the maximum allowed):
+  
+app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Started POST "/api/v1/recipes/create" for ::1 at 2020-11-12 15:45:58 +0000
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"name"=>"Tofu and Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini, 1 large or 2 small Japanese,  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. <br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts.", "recipe"=>{"name"=>"Tofu and Vegetable Curry", "ingredients"=>"4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini, 1 large or 2 small Japanese,  1 13.5-oz. can unsweetened coconut milk", "instruction"=>"Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. <br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts."}}
+[31mUnpermitted parameter: :recipe[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:8:in `create'
+  [1m[36mRecipe Create (1.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "instruction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tofu and Vegetable Curry"], ["ingredients", "4 Tbsp. virgin coconut oil or extra-virgin olive oil ( divided), 1 14-oz. package firm or extra-firm tofu ( cut into ½\" cubes), 2 medium onions, coarsely chopped, ⅓ cup red curry paste, 2 large zucchini, 1 large or 2 small Japanese,  1 13.5-oz. can unsweetened coconut milk"], ["instruction", "Heat 2 Tbsp. oil in a large skillet, preferably nonstick, over medium-high. Add tofu in a single layer and cook, turning over once, until cooked sides are golden brown, about 4 minutes. Transfer to paper towels to drain. <br> <br><br> <br>Heat remaining 2 Tbsp. oil in a large pot or high-sided skillet over medium-high. Add onions and a generous pinch of salt and stir to coat. Cook, stirring often, until softened, about 4 minutes. Stir in curry paste and cook, stirring often, until darkened in color, about 2 minutes. Add zucchini, eggplant, and green beans and cook, tossing to coat, until vegetables are softened and starting to brown in spots, 5–7 minutes. Pour in coconut milk and ½ cup water and bring to a simmer.<br> <br><br> <br>Add tofu to pot and stir gently to combine. Cook until warmed through, about 3 minutes. Season with more salt if needed.<br> <br><br> <br>Divide curry among bowls and add a generous squeeze of lime juice to each. Top with cilantro and peanuts."], ["created_at", "2020-11-12 15:45:58.604756"], ["updated_at", "2020-11-12 15:45:58.604756"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:8:in `create'
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:8:in `create'
+Completed 200 OK in 29ms (Views: 1.4ms | ActiveRecord: 6.7ms | Allocations: 3027)
+
+
+Started GET "/api/v1/show/11" for ::1 at 2020-11-12 15:45:58 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 0.8ms | Allocations: 1074)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-11-12 15:46:13 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 1.3ms | Allocations: 1485)
+
+
