@@ -11,7 +11,7 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
-  config.assets.check_precompiled_asset = true
+  config.assets.check_precompiled_asset = false
 
 
   # Enable/disable caching. By default caching is disabled.
