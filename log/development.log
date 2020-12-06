@@ -4851,3 +4851,46 @@ Processing by Api::V1::RecipesController#show as */*
 Completed 200 OK in 50ms (Views: 1.2ms | ActiveRecord: 10.4ms | Allocations: 7262)
 
 
+Started GET "/recipe/11" for ::1 at 2020-12-06 20:22:24 +0000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"recipe/11"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 200)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/amanda/code/amandaciobanu/react-rails-cookbook/public/packs
+[Webpacker] Hash: b5a49d471d65ad386b3d
+Version: webpack 4.44.2
+Time: 3584ms
+Built at: 12/06/2020 8:22:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-d1e579f1e48f0cb0431f.js   2.65 MiB        Index  [emitted] [immutable]  Index
+      js/Index-d1e579f1e48f0cb0431f.js.map   2.91 MiB        Index  [emitted] [dev]        Index
+    js/application-9a07695cedacf5655bce.js    682 KiB  application  [emitted] [immutable]  application
+js/application-9a07695cedacf5655bce.js.map    795 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-9a07695cedacf5655bce.js js/application-9a07695cedacf5655bce.js.map
+Entrypoint Index = js/Index-d1e579f1e48f0cb0431f.js js/Index-d1e579f1e48f0cb0431f.js.map
+[./app/assets/stylesheets/application.scss] 664 bytes {application} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 644 bytes {Index} [built]
+[./app/javascript/packs/application.js] 879 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1.48 KiB {Index} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/assets/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/assets/stylesheets/application.scss 6.98 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 45 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6610ms (Views: 6594.6ms | ActiveRecord: 0.0ms | Allocations: 38956)
+
+
+Started GET "/api/v1/show/11" for ::1 at 2020-12-06 20:22:31 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 6.1ms | Allocations: 7262)
+
+
