@@ -4746,3 +4746,108 @@ Processing by HomepageController#index as HTML
 Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms | Allocations: 6184)
 
 
+Started GET "/" for ::1 at 2020-12-05 14:58:19 +0000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 8413)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-12-05 14:58:29 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 127ms (Views: 76.5ms | ActiveRecord: 21.4ms | Allocations: 7087)
+
+
+Started GET "/api/v1/show/11" for ::1 at 2020-12-05 14:58:37 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 36ms (Views: 1.8ms | ActiveRecord: 1.7ms | Allocations: 3051)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-12-05 15:00:55 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 1.3ms | Allocations: 1305)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-12-05 15:01:03 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 1.2ms | Allocations: 1295)
+
+
+Started GET "/" for ::1 at 2020-12-06 19:07:08 +0000
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 44.9ms | ActiveRecord: 0.0ms | Allocations: 8413)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-12-06 19:07:10 +0000
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 34ms (Views: 16.4ms | ActiveRecord: 9.9ms | Allocations: 7059)
+
+
+Started GET "/api/v1/show/11" for ::1 at 2020-12-06 19:07:13 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 16ms (Views: 2.0ms | ActiveRecord: 1.9ms | Allocations: 1536)
+
+
+Started GET "/recipe/11" for ::1 at 2020-12-06 19:15:09 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"recipe/11"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 200)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/amanda/code/amandaciobanu/react-rails-cookbook/public/packs
+[Webpacker] Hash: ce3fde73cb6faee3f75b
+Version: webpack 4.44.2
+Time: 4409ms
+Built at: 12/06/2020 7:15:16 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-d1e579f1e48f0cb0431f.js   2.65 MiB        Index  [emitted] [immutable]  Index
+      js/Index-d1e579f1e48f0cb0431f.js.map   2.91 MiB        Index  [emitted] [dev]        Index
+    js/application-45fc36009a6c17e72f0c.js    663 KiB  application  [emitted] [immutable]  application
+js/application-45fc36009a6c17e72f0c.js.map    776 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-45fc36009a6c17e72f0c.js js/application-45fc36009a6c17e72f0c.js.map
+Entrypoint Index = js/Index-d1e579f1e48f0cb0431f.js js/Index-d1e579f1e48f0cb0431f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 644 bytes {Index} [built]
+[./app/javascript/packs/application.js] 832 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1.48 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 45 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6917ms (Views: 6903.7ms | ActiveRecord: 0.0ms | Allocations: 9836)
+
+
+Started GET "/api/v1/show/11" for ::1 at 2020-12-06 19:15:16 +0000
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36:in `recipe'
+Completed 200 OK in 50ms (Views: 1.2ms | ActiveRecord: 10.4ms | Allocations: 7262)
+
+
